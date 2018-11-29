@@ -251,6 +251,7 @@
 				68D94FD421ADAB420071BBA7 /* calendar icon.png in Resources */,
 				6808A4F821AEFAB000F82390 /* calendar new.png in Resources */,
 				6808A4F421AEF7E700F82390 /* games icon.png in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +420,6 @@
 		68FDDB4B219F22EE004295E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tester;
@@ -431,7 +431,6 @@
 		68FDDB4C219F22EE004295E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tester;
