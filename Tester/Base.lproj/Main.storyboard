@@ -59,18 +59,7 @@
                                 <rect key="frame" x="-3" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Log In" id="arE-SH-ogA">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="S94-C3-2nB">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iVQ-x8-uUV">
-                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="Fqb-WG-hd5"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Log In" id="arE-SH-ogA"/>
                                 </items>
                             </navigationBar>
                         </subviews>
