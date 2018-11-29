@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,14 +60,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Log In" id="arE-SH-ogA">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="fAO-N9-72c">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ywn-Ts-DZW">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="S94-C3-2nB">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iVQ-x8-uUV">
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Back"/>
                                             </button>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="Zqb-8b-Iio"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Fqb-WG-hd5"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -76,9 +75,13 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wkF-Sv-lhp" appends="YES" id="PCj-Zh-eFw"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XL6-vD-xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wkF-Sv-lhp"/>
             </objects>
             <point key="canvasLocation" x="-1146.4000000000001" y="400.74962518740631"/>
         </scene>
@@ -133,9 +136,9 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="Think" destination="qSB-7K-eh8" id="S8U-NG-hoR"/>
-                        <outlet property="login" destination="VKU-Ds-rua" id="yWv-CE-wUD"/>
-                        <outlet property="signup" destination="tCu-zu-vzN" id="k7w-nL-ZGh"/>
+                        <outlet property="login" destination="VKU-Ds-rua" id="5cm-ZF-L2f"/>
+                        <outlet property="signup" destination="tCu-zu-vzN" id="9ok-Qp-UZD"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Ncg-Ae-Bn9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -196,11 +199,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.71802137305699487" green="0.71802137305699487" blue="0.71802137305699487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="T1m-fT-NJ8" appends="YES" id="k6A-aP-0s0"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esG-SO-DHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="T1m-fT-NJ8"/>
             </objects>
-            <point key="canvasLocation" x="373.60000000000002" y="230.73463268365819"/>
+            <point key="canvasLocation" x="375" y="233"/>
         </scene>
         <!--New Caregiver Sign Up-->
         <scene sceneID="0IB-ez-V5U">
@@ -349,9 +356,13 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8gG-0O-64B" appends="YES" id="Pxj-06-73H"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hva-7z-XKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8gG-0O-64B"/>
             </objects>
             <point key="canvasLocation" x="1094" y="869"/>
         </scene>
@@ -371,8 +382,9 @@
                                 <rect key="frame" x="16" y="127" width="179" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Km6-bv-hfC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Km6-bv-hfC">
                                 <rect key="frame" x="16" y="416" width="250" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -384,14 +396,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4a-iq-TAQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4a-iq-TAQ">
                                 <rect key="frame" x="16" y="225" width="266" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-5V-Qsk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-5V-Qsk">
                                 <rect key="frame" x="16" y="166" width="157" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Birthdate">
                                         <attributes>
@@ -445,19 +459,17 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="M4a-iq-TAQ" firstAttribute="top" secondItem="Hgb-5V-Qsk" secondAttribute="bottom" constant="5" id="D6e-Xa-gdg"/>
-                            <constraint firstItem="Km6-bv-hfC" firstAttribute="top" secondItem="Hgb-5V-Qsk" secondAttribute="bottom" constant="8" id="JKf-zM-CHl"/>
-                            <constraint firstItem="Hgb-5V-Qsk" firstAttribute="leading" secondItem="VM0-2x-thh" secondAttribute="leadingMargin" id="KWb-UQ-nxx"/>
-                            <constraint firstItem="Km6-bv-hfC" firstAttribute="top" secondItem="M4a-iq-TAQ" secondAttribute="bottom" constant="5" id="cFG-p6-2fS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hgb-5V-Qsk" secondAttribute="trailing" constant="77" id="kE0-gJ-Cqp"/>
-                            <constraint firstItem="Km6-bv-hfC" firstAttribute="top" secondItem="M4a-iq-TAQ" secondAttribute="bottom" constant="10" id="nNs-cx-hel"/>
-                            <constraint firstItem="M4a-iq-TAQ" firstAttribute="top" secondItem="Hgb-5V-Qsk" secondAttribute="bottom" constant="5" id="sgz-BL-Fq1"/>
-                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vST-sK-cdN" appends="YES" id="gmi-ad-64F"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="czk-aR-0BA"/>
+                    <connections>
+                        <outlet property="view" destination="VM0-2x-thh" id="H0m-Zh-ccF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBB-gB-vcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vST-sK-cdN"/>
             </objects>
             <point key="canvasLocation" x="-311.19999999999999" y="829.83508245877067"/>
         </scene>

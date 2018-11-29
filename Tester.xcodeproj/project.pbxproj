@@ -10,7 +10,6 @@
 		68D94FD221AD9FC50071BBA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D94FD021AD9FC50071BBA7 /* Main.storyboard */; };
 		68FDDB26219F22ED004295E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB25219F22ED004295E8 /* AppDelegate.swift */; };
 		68FDDB28219F22ED004295E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB27219F22ED004295E8 /* ViewController.swift */; };
-		68FDDB2B219F22ED004295E8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDDB29219F22ED004295E8 /* Login.storyboard */; };
 		68FDDB3B219F22EE004295E8 /* TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB3A219F22EE004295E8 /* TesterTests.swift */; };
 		68FDDB46219F22EE004295E8 /* TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB45219F22EE004295E8 /* TesterUITests.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +36,6 @@
 		68FDDB22219F22ED004295E8 /* Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDDB25219F22ED004295E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68FDDB27219F22ED004295E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68FDDB2A219F22ED004295E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		68FDDB31219F22ED004295E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FDDB36219F22EE004295E8 /* TesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDDB3A219F22EE004295E8 /* TesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterTests.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				68D94FD021AD9FC50071BBA7 /* Main.storyboard */,
-				68FDDB29219F22ED004295E8 /* Login.storyboard */,
 				68FDDB25219F22ED004295E8 /* AppDelegate.swift */,
 				68FDDB27219F22ED004295E8 /* ViewController.swift */,
 				68FDDB31219F22ED004295E8 /* Info.plist */,
@@ -230,7 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				68D94FD221AD9FC50071BBA7 /* Main.storyboard in Resources */,
-				68FDDB2B219F22ED004295E8 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +294,6 @@
 				68D94FD121AD9FC50071BBA7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		68FDDB29219F22ED004295E8 /* Login.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68FDDB2A219F22ED004295E8 /* Base */,
-			);
-			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,7 +395,6 @@
 		68FDDB4B219F22EE004295E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tester;
@@ -419,7 +406,6 @@
 		68FDDB4C219F22EE004295E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tester;
