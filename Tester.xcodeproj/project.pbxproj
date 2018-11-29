@@ -11,11 +11,11 @@
 		6808A4F221AEF6FE00F82390 /* alert icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808A4F121AEF6FE00F82390 /* alert icon.png */; };
 		6808A4F421AEF7E700F82390 /* games icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808A4F321AEF7E700F82390 /* games icon.png */; };
 		6808A4F821AEFAB000F82390 /* calendar new.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808A4F721AEFAB000F82390 /* calendar new.png */; };
+		689DAD2721B05048005C81EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689DAD2621B05048005C81EC /* Login.storyboard */; };
 		68D94FD221AD9FC50071BBA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D94FD021AD9FC50071BBA7 /* Main.storyboard */; };
 		68D94FD421ADAB420071BBA7 /* calendar icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D94FD321ADAB420071BBA7 /* calendar icon.png */; };
 		68FDDB26219F22ED004295E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB25219F22ED004295E8 /* AppDelegate.swift */; };
 		68FDDB28219F22ED004295E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB27219F22ED004295E8 /* ViewController.swift */; };
-		68FDDB2B219F22ED004295E8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDDB29219F22ED004295E8 /* Login.storyboard */; };
 		68FDDB3B219F22EE004295E8 /* TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB3A219F22EE004295E8 /* TesterTests.swift */; };
 		68FDDB46219F22EE004295E8 /* TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB45219F22EE004295E8 /* TesterUITests.swift */; };
 /* End PBXBuildFile section */
@@ -42,12 +42,12 @@
 		6808A4F121AEF6FE00F82390 /* alert icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert icon.png"; sourceTree = "<group>"; };
 		6808A4F321AEF7E700F82390 /* games icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "games icon.png"; sourceTree = "<group>"; };
 		6808A4F721AEFAB000F82390 /* calendar new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar new.png"; sourceTree = "<group>"; };
+		689DAD2621B05048005C81EC /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		68D94FD121AD9FC50071BBA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68D94FD321ADAB420071BBA7 /* calendar icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar icon.png"; sourceTree = "<group>"; };
 		68FDDB22219F22ED004295E8 /* Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDDB25219F22ED004295E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68FDDB27219F22ED004295E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68FDDB2A219F22ED004295E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		68FDDB31219F22ED004295E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FDDB36219F22EE004295E8 /* TesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDDB3A219F22EE004295E8 /* TesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterTests.swift; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 				6808A4EF21AEF5D700F82390 /* Contact icon.png */,
 				68D94FD321ADAB420071BBA7 /* calendar icon.png */,
 				6808A4F321AEF7E700F82390 /* games icon.png */,
+				689DAD2621B05048005C81EC /* Login.storyboard */,
 				68D94FD021AD9FC50071BBA7 /* Main.storyboard */,
-				68FDDB29219F22ED004295E8 /* Login.storyboard */,
 				68FDDB25219F22ED004295E8 /* AppDelegate.swift */,
 				68FDDB27219F22ED004295E8 /* ViewController.swift */,
 				68FDDB31219F22ED004295E8 /* Info.plist */,
@@ -246,8 +246,8 @@
 			files = (
 				6808A4F221AEF6FE00F82390 /* alert icon.png in Resources */,
 				6808A4F021AEF5D700F82390 /* Contact icon.png in Resources */,
+				689DAD2721B05048005C81EC /* Login.storyboard in Resources */,
 				68D94FD221AD9FC50071BBA7 /* Main.storyboard in Resources */,
-				68FDDB2B219F22ED004295E8 /* Login.storyboard in Resources */,
 				68D94FD421ADAB420071BBA7 /* calendar icon.png in Resources */,
 				6808A4F821AEFAB000F82390 /* calendar new.png in Resources */,
 				6808A4F421AEF7E700F82390 /* games icon.png in Resources */,
@@ -318,14 +318,6 @@
 				68D94FD121AD9FC50071BBA7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		68FDDB29219F22ED004295E8 /* Login.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68FDDB2A219F22ED004295E8 /* Base */,
-			);
-			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
