@@ -12,7 +12,7 @@
         <!--log in view controller-->
         <scene sceneID="dro-j6-T0E">
             <objects>
-                <viewController id="tbe-AO-A7I" userLabel="log in view controller" sceneMemberID="viewController">
+                <viewController id="tbe-AO-A7I" userLabel="log in view controller" customClass="LoginViewController" customModule="Tester" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rug-f9-Zyt"/>
                         <viewControllerLayoutGuide type="bottom" id="LW8-GQ-qmu"/>
@@ -49,15 +49,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZp-4C-ue2">
-                                <rect key="frame" x="213" y="403" width="97" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <segue destination="9tx-rj-D9K" kind="show" id="VMr-1h-keM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQW-Ty-EjL">
                                 <rect key="frame" x="146" y="13" width="76" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,12 +65,25 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="kpA-Lc-zK5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZp-4C-ue2">
+                                <rect key="frame" x="231" y="542" width="97" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="login:" destination="tbe-AO-A7I" eventType="touchUpInside" id="eM2-VC-F7R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="wkF-Sv-lhp" appends="YES" id="PCj-Zh-eFw"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="Uy1-hW-2BT" id="dUC-pn-GPk"/>
+                        <outlet property="username" destination="bv5-Le-RaF" id="yRF-d9-fyx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XL6-vD-xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="wkF-Sv-lhp"/>
@@ -107,7 +111,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tbe-AO-A7I" kind="show" id="cq8-1R-Dzh"/>
+                                    <segue destination="tbe-AO-A7I" kind="show" id="NFj-0E-Bb3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCu-zu-vzN">
@@ -137,8 +141,6 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="login" destination="VKU-Ds-rua" id="5cm-ZF-L2f"/>
-                        <outlet property="signup" destination="tCu-zu-vzN" id="9ok-Qp-UZD"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="Vsd-yo-Evf"/>
                     </connections>
                 </viewController>
@@ -612,8 +614,8 @@
         <image name="games icon.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V5D-mk-9dX"/>
+        <segue reference="aXh-ET-Wog"/>
+        <segue reference="qVl-wg-BY5"/>
         <segue reference="kpA-Lc-zK5"/>
-        <segue reference="VMr-1h-keM"/>
     </inferredMetricsTieBreakers>
 </document>
