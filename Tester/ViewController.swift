@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
         //
         if(username.text == "test" && password.text == "test"){
             //go to next page
+            
             username.text = "IT WORKED";
         }
         //give error
