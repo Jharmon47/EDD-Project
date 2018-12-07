@@ -588,10 +588,10 @@
             </objects>
             <point key="canvasLocation" x="373.60000000000002" y="1611.5442278860571"/>
         </scene>
-        <!--View Controller-->
+        <!--Contactsviewcontroller-->
         <scene sceneID="IKq-e0-HYi">
             <objects>
-                <viewController id="Mh5-sg-vlS" sceneMemberID="viewController">
+                <viewController id="Mh5-sg-vlS" customClass="contactsviewcontroller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tAF-wu-eGL"/>
                         <viewControllerLayoutGuide type="bottom" id="GGJ-gK-H4u"/>
@@ -599,12 +599,47 @@
                     <view key="view" contentMode="scaleToFill" id="RvF-Pz-pWI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-85-sHT">
+                                <rect key="frame" x="146" y="48" width="82" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-i2-W5S">
+                                <rect key="frame" x="24" y="139" width="164" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-gE-24Q">
+                                <rect key="frame" x="108" y="246" width="159" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show all contacts"/>
+                                <connections>
+                                    <action selector="showcontacttapped:" destination="Mh5-sg-vlS" eventType="touchUpInside" id="lsi-bN-afb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhb-SA-a1w">
+                                <rect key="frame" x="196" y="144" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="numberlabel" destination="Rhb-SA-a1w" id="ES1-tC-Koi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEu-DC-rVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="1832"/>
+            <point key="canvasLocation" x="1268" y="1831.9340329835084"/>
         </scene>
     </scenes>
     <resources>
@@ -614,8 +649,8 @@
         <image name="games icon.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qVl-wg-BY5"/>
-        <segue reference="aXh-ET-Wog"/>
+        <segue reference="Rzb-Lz-1OP"/>
+        <segue reference="6rd-td-rfG"/>
         <segue reference="kpA-Lc-zK5"/>
     </inferredMetricsTieBreakers>
 </document>
