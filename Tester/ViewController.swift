@@ -53,7 +53,9 @@ class SignupViewController: UIViewController {
     }
 
 }
+import UIKit
 import ContactsUI
+
 class contactsviewcontroller: UIViewController, CNContactPickerDelegate {
     
     @IBOutlet weak var numberlabel: UILabel!
@@ -73,7 +75,9 @@ class contactsviewcontroller: UIViewController, CNContactPickerDelegate {
     }
     
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contacts: [CNContact]) {
+        
         contacts.forEach { (contact) in
+            
             for data in contact.phoneNumbers {
                 let phoneNo = data.value
                 numberlabel.text = phoneNo.stringValue
@@ -81,11 +85,14 @@ class contactsviewcontroller: UIViewController, CNContactPickerDelegate {
             }
     }
         
-        
+    }
+    
+    func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
+        print("it cancelled the contact view controller when the contact button is tapped")
+    }
         
 
-        
-    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
