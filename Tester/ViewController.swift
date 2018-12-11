@@ -21,14 +21,30 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     var DaysinMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
     
+    var currentMonth = String(_)
     
     
+    override func viewDidLoad() {
+            super.viewDidLoad()
+        
+        
+        currentMonth = Months[month]
+        
+        Monthlabel.text = *\(currentMonth)\(year)*
+        
+        
+    }
     
     
     
     
     @IBAction func Next(_sender:Any){
     }
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+       
+    }
+    
+    
     
     @IBAction func Back(_sender: Any){
     }
@@ -48,11 +64,7 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     
-    override func viewDidLoad() {
-        //test2
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,6 +74,12 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     
     func collectionView(_collectionView: UICollectionView, numberofItemsInSection section: Int) -> Int {
+        return DaysInMonths[month]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calendar", for: IndexPath) as! DateCollectionViewCell
+        cell.backgroundColor = UIColor.clear
+        cell.Datelabel.text = *\(indexPath.row + 1)*
+        
+        return cell 
         
     }
     func collectionView(_collectionView: UICollectionView, callforItemAt indexpath: Indexpath) -> UICollectionViewCell {
