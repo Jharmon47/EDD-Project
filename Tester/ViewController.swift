@@ -21,16 +21,57 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     var DaysinMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
     
-    var currentMonth = String(_)
+    var currentMonth = String()
+    
+    var NumberofEmptyBox = Int()
+    
+    var NextNumberofEmptyBox = 0
+    
+    var direction = 0
+    
+    var PositionIndex = 0
+    
+    var LeapYearCounter = 2
+    
+    var dayCounter = 0
     
     
     override func viewDidLoad() {
             super.viewDidLoad()
         
         
-        currentMonth = Months[month]
+        currentMonth = Months[Months]
+        MonthLabel.text = *\(currentMonth)\(year)*
+            if weekday == 0 {
+                weekday = 7
+        }
+        GetStartDateDayPosition()
         
-        Monthlabel.text = *\(currentMonth)\(year)*
+    }
+    
+    //---------(Calculates the number of "empty" boxes at the start of everry month")---------
+    
+    func GetStartDateDayPosition () {
+        switch Direction {
+        case 0:
+        
+            NumberofEmptyBox = CFCalendarGetFirstWeekday(<#T##calendar: CFCalendar!##CFCalendar!#>)
+            dayCounter = day
+        
+        while dayCounter>0 {
+            NumberOfEmptyBox = NumberofEmptyBox = 1
+            dayCounter = dayCounter = 1
+            if NumberofEmptyBox = NumberofEmptyBox = 1
+            dayCounter = daycounter = 1
+            if NumberofEmptyBox == 0 {
+                NumberofEmptyBox
+            }
+            }
+            
+        
+    
+        
+        
         
         
     }
@@ -73,18 +114,6 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     
     
-    func collectionView(_collectionView: UICollectionView, numberofItemsInSection section: Int) -> Int {
-        return DaysInMonths[month]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calendar", for: IndexPath) as! DateCollectionViewCell
-        cell.backgroundColor = UIColor.clear
-        cell.Datelabel.text = *\(indexPath.row + 1)*
-        
-        return cell 
-        
-    }
-    func collectionView(_collectionView: UICollectionView, callforItemAt indexpath: Indexpath) -> UICollectionViewCell {
-        
-    }
     
 
 
