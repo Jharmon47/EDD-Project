@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class LoginViewController: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet weak var Calendar: UICollectionView!
     @IBOutlet weak var MonthLabel: UILabel!
@@ -61,16 +61,13 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     
     
-    func collectionView(_collectionView: UICollectionView, numberofItemsInSection section: Int) -> Int {
-        
-    }
-    func collectionView(_collectionView: UICollectionView, callforItemAt indexpath: Indexpath) -> UICollectionViewCell {
+    
         
     }
     
 
 
-}
+
 class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
