@@ -11,6 +11,7 @@
 		6808A4F221AEF6FE00F82390 /* alert icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808A4F121AEF6FE00F82390 /* alert icon.png */; };
 		6808A4F421AEF7E700F82390 /* games icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808A4F321AEF7E700F82390 /* games icon.png */; };
 		6808A4F821AEFAB000F82390 /* calendar new.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808A4F721AEFAB000F82390 /* calendar new.png */; };
+		6868802721C80A7E0007A37D /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868802621C80A7E0007A37D /* DateCollectionViewCell.swift */; };
 		68D94FD221AD9FC50071BBA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D94FD021AD9FC50071BBA7 /* Main.storyboard */; };
 		68D94FD421ADAB420071BBA7 /* calendar icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D94FD321ADAB420071BBA7 /* calendar icon.png */; };
 		68FDDB26219F22ED004295E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDDB25219F22ED004295E8 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		6808A4F121AEF6FE00F82390 /* alert icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert icon.png"; sourceTree = "<group>"; };
 		6808A4F321AEF7E700F82390 /* games icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "games icon.png"; sourceTree = "<group>"; };
 		6808A4F721AEFAB000F82390 /* calendar new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar new.png"; sourceTree = "<group>"; };
+		6868802621C80A7E0007A37D /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		68D94FD121AD9FC50071BBA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68D94FD321ADAB420071BBA7 /* calendar icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar icon.png"; sourceTree = "<group>"; };
 		68FDDB22219F22ED004295E8 /* Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				68D94FD021AD9FC50071BBA7 /* Main.storyboard */,
 				68FDDB25219F22ED004295E8 /* AppDelegate.swift */,
 				68FDDB27219F22ED004295E8 /* ViewController.swift */,
+				6868802621C80A7E0007A37D /* DateCollectionViewCell.swift */,
 				68FDDB31219F22ED004295E8 /* Info.plist */,
 			);
 			path = Tester;
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68FDDB28219F22ED004295E8 /* ViewController.swift in Sources */,
+				6868802721C80A7E0007A37D /* DateCollectionViewCell.swift in Sources */,
 				68FDDB26219F22ED004295E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
