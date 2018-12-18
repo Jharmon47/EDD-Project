@@ -128,3 +128,40 @@ class contactsviewcontroller: UIViewController, CNContactPickerDelegate {
 
 }
 }
+class alertviewcontroller: UIViewController {
+    
+    override func viewDidLoad() {
+        //test2
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+        
+}
+    @IBAction func Alertaction(_ sender: Any) {
+    
+  setupalert()
+        
+        
+    }
+    
+    
+    func setupalert(){
+        
+        let Alertviewcontroller = UIAlertController(title: "8:00 am", message: "Breakfast in the cafeteria", preferredStyle: .alert)
+        
+        let Alertaction = UIAlertAction(title: "close", style: .cancel, handler: nil)
+        Alertviewcontroller.addAction(Alertaction)
+        self.present(Alertviewcontroller, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    
+}
