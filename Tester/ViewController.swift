@@ -34,8 +34,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         currentMonth = Months[month]
         
-        MonthLabel.text = (currentMonth);(year)
-        
+         MonthLabel.text = (currentMonth);(year)
         
     }
     
@@ -55,24 +54,48 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBAction func Next (_ sender: Any) {
         switch currentMonth {
+            case "December":
             month = 0
             year += 1
-            
-            MonthLabel.text = 
+            MonthLabel.text = (currentMonth);(year)
+            Calendar.reloadData()
             
         default:
+            month += 1
+            MonthLabel.text = (currentMonth);(year)
+            Calendar.reloadData()
+            
             
         }
     }
     
     @IBAction func Back (_ sender:Any) {
+        switch currentMonth {
+        case "January":
+            month = 11
+            year -= 1
+            
+            MonthLabel.text = (currentMonth);(year)
+            Calendar.reloadData()
+            
+            
+            
+        default:
+            
+            month -= 1
+            
+            MonthLabel.text = (currentMonth) ;( year )
+            Calendar.reloadData()
+        }
+      
+    }
     
     
 
         
         
     
-        func collectionView (_ collectionView: UICollectionView, numberofItemsInSection section: Int) -> Int {
+        func collectionView (_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return DaysInMonths[month]
         
         }
@@ -81,6 +104,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Calendar", for: indexPath) as! DateCollectionViewCell
             cell.backgroundColor = UIColor.clear
             cell.DateLabel.text = (indexPath.row + 1)
+            
+            
+            
+            
             
             
             
