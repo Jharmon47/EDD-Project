@@ -510,10 +510,10 @@
             </objects>
             <point key="canvasLocation" x="-311.19999999999999" y="829.83508245877067"/>
         </scene>
-        <!--View Controller-->
+        <!--Alertviewcontroller-->
         <scene sceneID="xnQ-Ey-PLH">
             <objects>
-                <viewController id="gwd-ay-s8B" sceneMemberID="viewController">
+                <viewController id="gwd-ay-s8B" customClass="Alertviewcontroller" customModule="Tester" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zai-aL-VG1"/>
                         <viewControllerLayoutGuide type="bottom" id="sup-m7-hoZ"/>
@@ -602,7 +602,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alerts" image="alert icon.png"/>
                                 <connections>
-                                    <segue destination="t5j-nX-XuN" kind="show" id="BKm-gN-ZgG"/>
+                                    <segue destination="t5j-nX-XuN" kind="show" id="e5H-8U-Eop"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wg-TM-gNy">
@@ -664,7 +664,7 @@
         <!--Alertviewcontroller-->
         <scene sceneID="980-Qt-GWI">
             <objects>
-                <viewController id="t5j-nX-XuN" customClass="alertviewcontroller" sceneMemberID="viewController">
+                <viewController id="t5j-nX-XuN" customClass="Alertviewcontroller" customModule="Tester" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5hU-NS-u35"/>
                         <viewControllerLayoutGuide type="bottom" id="eKX-mB-mVI"/>
