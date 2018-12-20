@@ -129,7 +129,7 @@ class contactsviewcontroller: UIViewController, CNContactPickerDelegate {
 }
 }
 class Alertviewcontroller: UIViewController {
-    
+   
     override func viewDidLoad() {
         //test2
         super.viewDidLoad()
