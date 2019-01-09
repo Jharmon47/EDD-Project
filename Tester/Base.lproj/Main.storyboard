@@ -93,7 +93,7 @@
         <!--opening view-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="opening view" customClass="ViewController" customModule="Tester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="opening view" customClass="ViewController" customModule="Tester" customModuleProvider="Target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -510,10 +510,10 @@
             </objects>
             <point key="canvasLocation" x="-311.19999999999999" y="829.83508245877067"/>
         </scene>
-        <!--View Controller-->
+        <!--Alertviewcontroller-->
         <scene sceneID="xnQ-Ey-PLH">
             <objects>
-                <viewController id="gwd-ay-s8B" sceneMemberID="viewController">
+                <viewController id="gwd-ay-s8B" customClass="Alertviewcontroller" customModule="Tester" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zai-aL-VG1"/>
                         <viewControllerLayoutGuide type="bottom" id="sup-m7-hoZ"/>
@@ -704,7 +704,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alerts" image="alert icon.png"/>
                                 <connections>
-                                    <segue destination="t5j-nX-XuN" kind="show" id="BKm-gN-ZgG"/>
+                                    <segue destination="t5j-nX-XuN" kind="show" id="e5H-8U-Eop"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wg-TM-gNy">
@@ -771,7 +771,7 @@
         <!--Alertviewcontroller-->
         <scene sceneID="980-Qt-GWI">
             <objects>
-                <viewController id="t5j-nX-XuN" customClass="alertviewcontroller" sceneMemberID="viewController">
+                <viewController id="t5j-nX-XuN" customClass="Alertviewcontroller" customModule="Tester" customModuleProvider="Target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5hU-NS-u35"/>
                         <viewControllerLayoutGuide type="bottom" id="eKX-mB-mVI"/>
@@ -795,7 +795,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Alertaction:" destination="t5j-nX-XuN" eventType="touchUpInside" id="tI5-D3-7HA"/>
+                                    <action selector="button:" destination="t5j-nX-XuN" eventType="touchUpInside" id="3xE-O8-sMf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AS-z4-NvB">
@@ -865,6 +865,7 @@
                                 </state>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jxn-ct-vlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -990,8 +991,8 @@
         <image name="games icon.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qVl-wg-BY5"/>
-        <segue reference="aXh-ET-Wog"/>
+        <segue reference="I4a-Uj-4Sx"/>
+        <segue reference="V5D-mk-9dX"/>
         <segue reference="kpA-Lc-zK5"/>
     </inferredMetricsTieBreakers>
 </document>
